@@ -4,6 +4,7 @@
 
 Console.Write("Введите длину массива: ");
 int length = Convert.ToInt32(Console.ReadLine());
+
 int[] array = Array(length);
 PrintArray(array);
 
@@ -22,8 +23,11 @@ int[] Array(int size)
 
 void PrintArray(int[] arr)
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write(arr[i] + " ");
+        Console.Write(arr[i] + ", ");
     }
+    Console.Write($"{arr[arr.Length - 1]}");
+    Console.WriteLine("]");
 }
