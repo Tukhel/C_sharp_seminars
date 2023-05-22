@@ -20,7 +20,7 @@ int FindIndexMinElement(int[] arr)
 {
     int min = arr[0];
     int index = 0;
-    for (int i = 1; i < arr.Length - 1; i++)
+    for (int i = 1; i < arr.Length; i++)
     {
         if (min > arr[i])
         {
