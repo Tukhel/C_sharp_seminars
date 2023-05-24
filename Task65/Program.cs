@@ -14,10 +14,10 @@ NaturalNumbersMToN(numberM, numberN);
 void NaturalNumbersMToN(int numM, int numN)
 {
     if (numM < numN)
-    {   
+    {
         Console.Write($"{numM} ");
         NaturalNumbersMToN(numM + 1, numN);
-        
+
     }
     else if (numM > numN)
     {
@@ -25,4 +25,4 @@ void NaturalNumbersMToN(int numM, int numN)
         NaturalNumbersMToN(numM - 1, numN);
     }
     else Console.Write(numM);
-   }
+}
